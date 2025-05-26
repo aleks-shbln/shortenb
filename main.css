@@ -1,0 +1,117 @@
+html {
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: url("background.svg");
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+.logo {
+  color: white;
+  margin: 0;
+  padding: 10px;
+  text-decoration: underline;
+  font-size: 4rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+
+}
+
+nav a {
+  display: block;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #1f52c8;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:focus-visible {
+  background-color: #102b6a;
+}
+
+nav a:hover {
+  background-color: #102b6a;
+}
+
+/* nav a:active {
+  background-color: #2560eb;
+  color: white;
+} */
+
+.help {
+  width: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+main {
+  background-color: #fff;
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #102b6aa1;
+  position: sticky;
+  bottom: 0;
+}
+
+footer p {
+  padding: 10px 5px;
+  color: #ccc;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e2e2e2;
+
+}
+
+/* footer a:focus-visible {
+  background-color: #102b6a;
+} */
+
+footer a:hover {
+  text-decoration: underline;
+}
