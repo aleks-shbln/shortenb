@@ -101,6 +101,28 @@ main {
   width: 500px;
   height: 200px;
   border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+}
+
+#longUrl {
+  width: 100%;
+  height: 2rem;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #7c88a5;
+}
+
+.btn_submit {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #207556;
+  color: #fff;
 }
 
 footer {
