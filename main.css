@@ -99,10 +99,10 @@ nav a:hover {
 main {
   background-color: #fff;
   width: 500px;
-  height: 200px;
   border-radius: 10px;
   margin: auto;
   padding: 20px;
+  box-shadow: 0 0 3px #445d8b;
 }
 
 #longUrl {
@@ -111,7 +111,7 @@ main {
   margin: 10px 0;
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid #7c88a5;
+  border: 3px solid #7c88a5;
 }
 
 .btn_submit {
