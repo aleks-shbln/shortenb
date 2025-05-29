@@ -20,9 +20,15 @@
 
   <div class="wrapper">
     <header>
-      <h1 class="logo">SHORTENЪ</h1>
 
-      <nav>
+      <div class="mobile_header">
+        <h1 class="logo">SHORTENЪ</h1>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <nav id="menu">
         <ul>
           <li>
             <a href="#" class="help">?</a>
@@ -68,6 +74,17 @@
       </p>
     </footer>
   </div>
+
+  <script>
+    function toggleMenu() {
+      let x = document.getElementById("menu");
+      if (!x.className) {
+        x.className = "display_menu";
+      } else {
+        x.className = "";
+      }
+    }
+  </script>
 
 </body>
 
