@@ -8,10 +8,6 @@ let urls = [
   { original: "http://example.com", short: "https://shortenb.com/abc123" }
 ]
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
 app.get('/urls', (req, res) => {
   res.json(urls)
 })
@@ -31,5 +27,5 @@ app.post('/generate', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`shortenb app listening on port ${port}`)
 })
