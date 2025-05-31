@@ -1,4 +1,6 @@
 const express = require('express')
+const path = require('node:path');
+
 const app = express()
 const port = 3000
 
@@ -7,6 +9,8 @@ app.use(express.json())
 let urls = [
   { original: "http://example.com", short: "https://shortenb.com/abc123" }
 ]
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/urls', (req, res) => {
   res.json(urls)
@@ -23,7 +27,6 @@ app.post('/generate', (req, res) => {
     date: new Date(), 
     short_url: urls[urls.length - 1].short 
   })
-  // res.send({ short_url: "https://shortenb.io/abc123"})
 })
 
 app.listen(port, () => {
