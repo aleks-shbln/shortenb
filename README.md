@@ -3,4 +3,14 @@
 ### Local run
 
 Execute
-  node index.js
+
+```bash
+node index.js
+```
+
+
+### Run tests
+
+```bash
+node --test
+```
